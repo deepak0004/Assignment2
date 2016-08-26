@@ -132,6 +132,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_above="@+id/texx"
+        android:freezesText="true"
         android:layout_alignEnd="@+id/imageView" />
 
     <TextView
@@ -141,6 +142,7 @@
         android:id="@+id/cheattaken"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:freezesText="true"
         android:layout_above="@+id/texx" />
 
 </RelativeLayout>

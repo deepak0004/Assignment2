@@ -22,7 +22,7 @@ import java.util.Random;
 public class Checking_Prime extends AppCompatActivity
 {
     public static int i1;        // saving the no for screen rotation
-    public static String i2 = "a", i3 = "b", i4 = "c";    // used in savedInstance
+    public static String i2 = "a", i3 = "b", i4 = "c", i5 = "d", i6 = "e";    // used in savedInstance
     public static boolean buttonState = true, buttonState2 = true, hint = false, cheat = false;
     Button deepcorrec, deepincorrec;
     public static TextView tv8, tv9;
@@ -50,6 +50,14 @@ public class Checking_Prime extends AppCompatActivity
         outState.putInt(i2, i1);
         outState.putBoolean(i3, buttonState);   // For correct
         outState.putBoolean(i4, buttonState2);  // For incorrect
+    //    if( hint )
+           outState.putString(i5, "Hint Taken");
+      //  else
+      //      outState.putString(i5, "");
+      //  if( cheat )
+           outState.putString(i6, "Cheat Taken");
+      //  else
+      //      outState.putString(i6, "");
         super.onSaveInstanceState(outState);
     }
     @Override
@@ -76,6 +84,11 @@ public class Checking_Prime extends AppCompatActivity
 
             deepcorrec.setEnabled(buttonState);
             deepincorrec.setEnabled(buttonState2);
+
+            String st1 = savedInstanceState.getString( i5 );
+            Log.i(st1, "Hi");
+            tv8.setText( "hh" );
+            tv9.setText( savedInstanceState.getString( i6 ) );
         }
         else {
             Random r = new Random();
@@ -160,11 +173,11 @@ public class Checking_Prime extends AppCompatActivity
         Button exit2 = (Button)findViewById(R.id.exitt);
         exit2.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                startActivity( new Intent(getApplicationContext(), Checking_Primee.class) );
                 hint = false;
                 cheat = false;
                 tv8.setText( "" );
                 tv9.setText( "" );
+                startActivity( new Intent(getApplicationContext(), Checking_Primee.class) );
             }
         });
 

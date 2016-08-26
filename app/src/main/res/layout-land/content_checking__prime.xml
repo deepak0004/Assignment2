@@ -131,8 +131,9 @@
         android:id="@+id/hinttaken"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/texx"
+        android:freezesText="true"
         android:layout_above="@+id/texx"
-        android:layout_toStartOf="@+id/imageView" />
+        android:layout_toStartOf="@+id/gethint" />
 
     <TextView
         android:layout_width="100dp"
@@ -140,6 +141,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/cheattaken"
         android:layout_alignBottom="@+id/hinttaken"
+        android:freezesText="true"
         android:layout_alignEnd="@+id/incorrec"
         android:layout_alignTop="@+id/hinttaken"
         android:layout_toEndOf="@+id/nex" />
