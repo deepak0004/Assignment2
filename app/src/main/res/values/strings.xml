@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Checking_Prime</string>
+    <string name="action_settings">Settings</string>
+    <string name="correctt">Yes</string>
+    <string name="incorrectt">No</string>
+    <string name="nextt">Next</string>
+    <string name="imagee">Image</string>
+    <string name="imagee2">imagee2</string>
+    <string name="title_activity_checking__primee">Checking_Primee</string>
+    <string name="press_to_continue">Press To Continue</string>
+    <string name="textt">It produces a random number from 1-1000 and checks whether a number is prime or not!!</string>
+    <string name="exitt">Exit</string>
+    <string name="get_hint">Get Hint</string>
+    <string name="get_cheat">Get Cheat</string>
+    <string name="title_activity_ghint">GHint</string>
+    <string name="get_cheat2">Get Cheat</string>
+</resources>
